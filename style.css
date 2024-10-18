@@ -84,3 +84,42 @@ input {
     color: rgba(255, 0, 0, 0.734);
     font-size: 12px;
 }
+
+/* Estilos para dispositivos móviles (pantallas pequeñas) */
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 5vh;
+        margin-top: 5rem;
+    }
+
+    h1, h3 {
+        font-size: 1.5rem;
+    }
+
+    .containerBox {
+        padding: 20px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #searchButton {
+        width: 95%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #responseData {
+        font-size: 14px;
+    }
+
+    #errorMessage {
+        font-size: 10px;
+    }
+}
+
+
