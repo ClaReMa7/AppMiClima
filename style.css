@@ -20,6 +20,10 @@ body {
     padding:10vh;
 }
 
+.container h3 {
+    font-size: 1.5rem;
+}
+
 .containerBox {
     height:80%;
     margin-top: 1vh;
@@ -31,13 +35,14 @@ body {
 }
 
 input {
-    padding: 8px;
+    padding:14px;
     border: none;
     outline: none;
     background-color: transparent;
     border-radius: 3px;
     box-shadow: inset  0 4px 6px rgba(254, 253, 253, 0.2);
     color: whitesmoke;
+    font-size: 18px;
 }
 
 .containerBox input::placeholder {
@@ -45,12 +50,12 @@ input {
 }
 
 #searchButton {
-    padding: 7px;
+    padding: 14px;
     border: none;
     border-radius: 3px;
     background-color: #ff9800;
     color: white;
-    font-size: 15px; 
+    font-size: 18px; 
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -69,7 +74,7 @@ input {
 
 #responseData {
     margin-top: 10px;
-    font-size: small;
+    font-size: 18px;
     font-weight: 300;
     line-height: 30px;
     opacity: 0;
@@ -82,7 +87,7 @@ input {
 
 #errorMessage {
     color: rgba(255, 0, 0, 0.734);
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /* Estilos para dispositivos móviles (pantallas pequeñas) */
@@ -119,6 +124,42 @@ input {
 
     #errorMessage {
         font-size: 10px;
+    }
+}
+
+/* Estilos para tablets (pantallas medianas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+        padding: 10vh;
+    }
+
+    h1, h3 {
+        font-size: 2rem;
+    }
+
+    .containerBox {
+        padding: 30px;
+    }
+
+    input {
+        width: 80%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #searchButton {
+        width: auto;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #responseData {
+        font-size: 16px;
+    }
+
+    #errorMessage {
+        font-size: 12px;
     }
 }
 
