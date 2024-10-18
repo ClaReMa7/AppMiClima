@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(21, 32, 66, 0.971);
+    font-family: 'Merriweather Sans', sans-serif;
+    color: rgb(242, 239, 239);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 80%;
+    text-align: center;
+    padding:10vh;
+}
+
+.containerBox {
+    height:80%;
+    margin-top: 1vh;
+    padding: 50px;
+    border: 2px;
+    background-color: rgb(12, 19, 55);
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(222, 221, 221, 0.1)
+}
+
+input {
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-radius: 3px;
+    box-shadow: inset  0 4px 6px rgba(254, 253, 253, 0.2);
+    color: whitesmoke;
+}
+
+.containerBox input::placeholder {
+    color: rgba(240, 240, 240, 0.834); 
+}
+
+#searchButton {
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ff9800;
+    color: white;
+    font-size: 15px; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#searchButton:hover {
+    background-color: #e68900; 
+    transform: scale(1.05); 
+}
+
+#searchButton:active {
+    background-color: #c07402;  
+    transform: scale(0.98); 
+}
+
+#responseData {
+    margin-top: 10px;
+    font-size: small;
+    font-weight: 300;
+    line-height: 30px;
+    opacity: 0;
+    transition: opacity 0.5s ;
+}
+
+#responseData.visible {
+    opacity: 1;
+}
+
+#errorMessage {
+    color: rgba(255, 0, 0, 0.734);
+    font-size: 12px;
+}

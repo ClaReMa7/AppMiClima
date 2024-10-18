@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Clime</title>
+    <!--Vinculación font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Vinculación estilo CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1>Aplicación</h1>
+        <h3>MiClima</h3>
+        <div class="containerBox">
+            <input type="text" id="cityInput" placeholder="Ingresa una ciudad">
+            <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div id="responseData"></div>
+            <div id="errorMessage" display: none;></div>
+        </div>
+        
+
+    </div>
+<!--Vinculación con archivo js-->
+    <script src="script.js"></script>
+</body>
+</html>
